@@ -1,149 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Oliver ❤️ Lude</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto&family=Prata:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
-        <style>
-            body {
-                font-family: "Roboto", sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: rgb(252, 249, 245);
-                color: #333;
-            }
-            header {
-                background-color: rgb(235, 227, 221);
-                color: rgb(44, 42, 51);
-                padding: 20px 0;
-                text-align: center;
-                font-family: "Parisienne", cursive;
-            }
-            nav {
-                display: flex;
-                justify-content: center;
-                background-color: #f2f2f2;
-                padding: 10px 0;
-            }
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-                display: flex;
-            }
-            nav ul li {
-                margin: 0 20px;
-            }
-            nav ul li a {
-                text-decoration: none;
-                color: #333;
-                font-weight: 700;
-                transition: color 0.3s;
-            }
-            nav ul li a:hover {
-                color: #ff4466;
-            }
-            section {
-                padding: 40px 20px;
-                text-align: center;
-            }
-            section h2 {
-                font-size: 2em;
-                margin-bottom: 20px;
-            }
-            footer {
-                background-color: rgb(235, 227, 221);
-                color: white;
-                text-align: center;
-                padding: 10px;
-                margin-top: 20px;
-            }
-            .card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                transition: 0.3s;
-                margin: 20px;
-                display: inline-block;
-                background: white;
-                border-radius: 10px;
-                padding: 20px;
-                width: calc(66% - 40px);
-            }
-            .card:hover {
-                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-            }
-            @media (max-width: 768px) {
-                .card {
-                    width: calc(50% - 40px);
-                }
-            }
-            @media (max-width: 480px) {
-                .card {
-                    width: calc(100% - 40px);
-                }
-            }
-            h1 {
-                font-size: 3em; /* Increase the font size from the default to 3em */
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Oliver ❤️ Lude</h1>
-            <img
-                src="./flower1.jpg"
-                alt="Flower"
-                style="
-                    display: block;
-                    margin: 0 auto;
-                    max-width: 100%;
-                    height: auto;
-                "
-            />
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#love-stories">Love Stories</a></li>
-                <li><a href="#advice">Advice</a></li>
-                <li><a href="#blog">Blog</a></li>
-            </ul>
-        </nav>
-        <section id="love-stories">
-            <h2>前言</h2>
-            <div class="card">
-                <p>
-                    转眼间，与你相遇已达九个月。在这段并不算长的时间里，我们共同经历了许多：一起做饭、散步、追剧、旅行、聆听神的教导......这一切都编织成了我们共有的美好回忆。你的善良、成熟、理智以及美丽深深地吸引着我，让我无比确信，我已找到了那个对的人。当然，这段旅程也充满了挑战与困难，但正是这些经历促使我们彼此间的了解和接纳达到了一个新的深度。我们一步步克服这些分歧与挑战，创造了一个既培养个人成长也庆祝并追求共同目标的空间。我们珍惜快乐和欢笑的时光，就如同我们重视在挑战中展现的力量和韧性一样。我期待，这种充满爱、支持、雄心及乐趣的独特混合能够成为我们关系的坚实基石，支撑着我们共同构建的未来，让我们不只是恋人，更是生命中真正的伙伴。
-                </p>
-            </div>
-            <!-- More cards -->
-        </section>
-        <section id="advice">
-            <h2>Relationship Advice</h2>
-            <div class="card">
-                <p>
-                    Tips for keeping your relationship strong, no matter the
-                    distance.
-                </p>
-            </div>
-            <div class="card">
-                <p>How to communicate effectively with your partner.</p>
-            </div>
-            <!-- More cards -->
-        </section>
-        <section id="blog">
-            <h2>Latest Blog Posts</h2>
-            <div class="card">
-                <p>5 Romantic Getaways for Every Couple</p>
-            </div>
-            <div class="card">
-                <p>Understanding Love Languages</p>
-            </div>
-            <!-- More cards -->
-        </section>
-        <footer>
-            <p>Contact Us | Follow us on Social Media</p>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oliver ❤️ Lude</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto&family=Prata:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(252, 249, 245);
+        color: #333;
+      }
+      header {
+        background-color: rgb(235, 227, 221);
+        color: rgb(44, 42, 51);
+        padding: 20px 0;
+        text-align: center;
+        font-family: "Parisienne", cursive;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #f2f2f2;
+        padding: 10px 0;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+      }
+      nav ul li {
+        margin: 0 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 700;
+        transition: color 0.3s;
+      }
+      nav ul li a:hover {
+        color: #ff4466;
+      }
+      section {
+        padding: 40px 20px;
+        text-align: center;
+      }
+      section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      footer {
+        background-color: rgb(235, 227, 221);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+      }
+      @keyframes scaleUp {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.05);
+        }
+      }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        margin: 20px;
+        display: inline-block;
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        max-width: calc(66% - 40px);
+        text-align: left;
+      }
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        animation: scaleUp 0.5s forwards;
+      }
+      @media (max-width: 768px) {
+        .card {
+          width: calc(50% - 40px);
+        }
+      }
+      @media (max-width: 480px) {
+        .card {
+          width: calc(100% - 40px);
+        }
+      }
+      h1 {
+        font-size: 3em; /* Increase the font size from the default to 3em */
+      }
+      .memory-images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .memory-images .card {
+        max-width: calc(30% - 40px);
+        height: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Oliver ❤️ Lude</h1>
+      <img
+        src="./img/flower1.jpg"
+        alt="Flower"
+        style="display: block; margin: 0 auto; max-width: 100%; height: auto"
+      />
+      <div class="arrow"></div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#preface">前言</a></li>
+        <li><a href="#trust">逐步重建信任</a></li>
+        <li><a href="#value">共同的目标与价值</a></li>
+        <li><a href="#life">生活上的扶持与照顾</a></li>
+        <li><a href="#emotion">情感支持</a></li>
+        <li><a href="#memory">美好的回忆与经历</a></li>
+        <li><a href="#development">成长与发展</a></li>
+        <li><a href="#epilogue">结语</a></li>
+      </ul>
+    </nav>
+    <section id="preface">
+      <h2>前言</h2>
+      <div class="card">
+        <p>
+          转眼间，与你相遇已达九个月。在这段并不算长的时间里，我们共同经历了许多：一起做饭、散步、追剧、旅行、聆听神的教导......这一切都编织成了我们共有的美好回忆。你的善良、成熟、理智以及美丽深深地吸引着我，让我无比确信，我已找到了那个对的人。当然，这段旅程也充满了挑战与困难，但正是这些经历促使我们彼此间的了解和接纳达到了一个新的深度。我们一步步克服这些分歧与挑战，创造了一个既培养个人成长也庆祝并追求共同目标的空间。我们珍惜快乐和欢笑的时光，就如同我们重视在挑战中展现的力量和韧性一样。我期待，这种充满爱、支持、雄心及乐趣的独特混合能够成为我们关系的坚实基石，支撑着我们共同构建的未来，让我们不只是恋人，更是生命中真正的伙伴。正如我们之前讨论的那样，对于我们的关系，我们不仅抱有长远的高期望，同时也认识到需要制定可逐步执行的具体行动计划。基于这样的理念，我想分享以下的主张和想法。
+        </p>
+      </div>
+    </section>
+    <section id="trust">
+      <h2>逐步重建信任</h2>
+      <div class="card">
+        <p>
+          信任是维系我们关系稳定的关键之一。然而，我们目前面临的感情危机，核心问题在于信任的缺失。这主要涉及两个方面：我与前任的纠缠，以及我对日常小事的忽略。我深知这些过去的错误，并再次深表歉意和自责。但我坚信，通过我们共同的努力，我们的信任能够逐步重建。为此，我提出以下几点具体行动计划：
+          <li>
+            不再与前任有任何的联系。经过两个月的思考，我已经逐渐从自我绑架的病态心理走出来。认识到了以前的行为的扭曲。从此之后我坚守原则，不再重蹈覆辙。
+          </li>
+          <li>
+            言出必行。在这点上我以前做的还不错。基本上制定好的计划我都会准时准点地去落实。但我承认，之前有时未能完全实践“超越期望”的原则。自十二月以来，这方面已有明显改善，我开始觉得那些曾视为“耗精力”的事，现在变成了自然而然的行为。今后，哪怕你提出那些所谓的“不合理”的需求，只要不违背原则，我都会尽力满足。
+          </li>
+          <li>
+            坚守诚实。过去的经历已让我深刻地认识到了谎言并不能解决任何问题，它会带来更大的痛苦。诚实永远是最好的对策。因此，除了避免谎言带来的痛苦，我还将具体行动落到实处，在每晚祷告时向神报告我度过了诚实的一天。我相信，在自我激励和神的监督下，我不会再撒谎。
+          </li>
+          <li>
+            不再隐藏真实的自己，勇敢展示脆弱。在许多人眼中，我或许一直保持着不动声色的形象，甚至对此有些自豪，不经意间将这种态度带入我们的亲密关系。虽然这在一定程度上减少了给你带来的负面情绪，但实际上它却拉大了我们之间的距离。我应该更多地展示自己脆弱的一面，分享我的喜怒哀乐。在这个世界上，除了神，你应该是我最亲近的人。具体而言，无论是在工作、人际交往中遇到困难，还是家庭出现问题，我都应该积极分享。如果我们重新开始，我首先要做的，就是与你分享我家庭最近发生的变故和我所面临的困扰。
+          </li>
+        </p>
+      </div>
+    </section>
+    <section id="value">
+      <h2>共同的目标与价值</h2>
+      <div class="card">
+        <p>
+          我觉得，总的来说，我们分享着相似或者是互相契合的世界观，人生观，和价值观。当然，我们的一些观念也是在随着时间的推移、通过成长和经历逐渐找到共鸣的。<br /><br />
+          在世界观方面，自从我接受洗礼后，我们都坚持着同样的核心基督教世界观：一个伟大而全能的神创造了这个世界，而人类因原罪而与上帝产生了隔阂。但是，通过上帝之子耶稣的受难和复活，我们通过信仰得到了救赎。这份共享的世界观为我们之间建立了一种“灵性的联系”，这不仅仅体现在形式上，比如一起读经、参加教堂活动、加入小组聚会、以及睡前一同祈祷；更重要的是，它还体现在我们的心灵深处的交流。我们会分享对圣经经文的见解、对布道内容的感悟和理解，这些都加深了我们之间的灵性纽带。<br /><br />
+          在人生观方面，首先我们都认为生命的本质的目的和意义就是用我们的生命展现神的荣耀与伟大。只不过在具体实现方面，我们有着不同的切入点和角度，但是也在相互补充与完善：
+          <li>
+            我们都致力于在有限的生命中对世界产生积极且深远的影响。你的焦点在于能源与环境领域，希望通过你的努力，人类能够尽快实现向清洁能源的全面转型，从而减少对环境的破坏，并通过丰富的能源资源大幅提升社会的生产力。而我，我的兴趣则在电子科技领域，梦想着通过我的贡献，推动电子科技特别是医疗科技的发展，使人们的生活更加便捷。当然我承认，最近我的视野被恐惧所限，一度寻求安稳，忘记了“恐惧不会带我走远”的道理。但是从今以后我会重拾激情，坚定不移地追求朝着目标努力。
+          </li>
+          <li>
+            在风险管理，家庭与事业发展上，我们又十分互补。你天生乐于接受挑战，勇于探索未知，而我在面对风险时则更为谨慎，总是希望确保万无一失，避免不必要的风险。这两种不同的态度使我们能够建立一个完整的风险评估体系，确保我们既不会过度冒险，也不会错失重要的机会。我看到你是一个极具事业心的女性，未来可能会将大部分精力投入到事业发展中，我对此表示全力支持。相对而言，我更加重视家庭的和谐与建设，愿意将大量的精力投入到家庭中。这样的互补，确保我们既能在事业上取得成就，同时也能够营造一个充满爱和支持的家庭环境。
+          </li>
+          <br />
+          在价值观方面，有许多相似之处让我们的关系更加深厚：首先，爱是我们价值观的核心所在。我们不仅仰爱神与基督，也深入领会并践行“爱人如己”的教诲。我们心中充满善意，总是寻找机会去尽己所能地援助他人。其次，我们在对待他人，包括彼此的交往中，始终保持着相互尊重的态度。我们意识到每个人都有其独特的价值和尊严，我们努力以一种平等和理解的心态去与人相处。最后，我们都是希望的播种者。我们的希望不仅根植于基督的救恩，更源自于对更美好生活的向往。这份希望驱使我们勇敢面对生活中的各种挑战，保持一种积极向上的生活态度。正是这些共同的价值观，加深了我们之间的联系，并为我们共同的未来奠定了坚实的基础。
+        </p>
+      </div>
+    </section>
+    <section id="life">
+      <h2>生活上的扶持与照顾</h2>
+      <div class="card">
+        <p>
+          在过去的日子里，我有试图通过各种方式减轻你的生活负担，比如为你解决每日的饮食问题，我不仅从公司带饭回家，还努力学习制作你喜欢的菜肴。我也尝试从家务上帮助你，包括洗衣服、叠衣服以及清洁，旨在为你创造一个整洁舒适的生活环境。为了减少你的出行压力，我尽量开车接送你，包括接送你去机场。我知道，作为你的男朋友，这些都是我应该做的，但我也认识到我所做的还远远不够。如果我们有幸能重新开始，我计划把增进你的幸福与快乐定为我的首要日常目标之一。我愿意承担更多家务责任，以减轻你的生活负担。我将更加用心地倾听和观察你的需求，以更好地理解和满足你的期望。我打算在手机上开设一个新的笔记，记录下那些我可以在生活中为你提供帮助的细节。毕竟好记性不如烂笔头，这样将帮助我更有效地实践我的承诺，确保我能在我们的日常生活中为你提供最大的支持和关怀。当然，在生活上培养共同的兴趣和爱好也是维系感情的重要因素。除了我们每季度一次的旅行之外，我认为我们还应该共同培养一项体育活动，这将大大有益于我们的身心健康。我目前考虑的可能选项包括健身、攀岩或羽毛球。我们可以进一步讨论以确定具体的活动，但我希望我们能够每周进行2-3次，以养成习惯并达到理想的运动量。值得一提的是，我们俩都在某种程度上注重“洁净”。我更倾向于追求环境的清洁和整洁，而你则注重个人习惯的卫生。这种共同的关注点为我们未来的生活营造了一个干净、有序的环境。
+        </p>
+      </div>
+    </section>
+    <section id="emotion">
+      <h2>情感支持</h2>
+      <div class="card">
+        <p>
+          我深信，我们的关怀不应仅限于生活层面，情感上的相互支撑同样重要。首先，我愿意更多地分享我的情感，以此增进我们之间的亲密度。并且在我们共享快乐时刻时，我会更积极地记录这些珍贵的瞬间，用相机捕捉我们的笑容和幸福。当你遇到挑战、感到困惑或迷茫时，我会以一颗同理心来对待你的忧虑，如同对待我自己的一样。我会全心全意地倾听你的心声，首先从圣经中寻求指引和安慰给我们两人。然后，我们可以一起探索与分析可能的解决方法。快乐在分享中得以倍增，而烦恼则在分享中减半。相信通过这样的相互支持和分享，我们可以共同面对生活中的起伏，携手共创一个更加美好和充满爱的未来。
+        </p>
+      </div>
+    </section>
+    <section id="memory">
+      <h2>美好的回忆与经历</h2>
+      <div class="card">
+        <p>
+          尽管我们在一起不算久，但我们已共同创造了无数珍贵而美妙的回忆。我们的旅程从圣地亚哥开始，那里我们共赏海豚表演，手牵手漫步于Belmont
+          Park的海滩之上，共同庆祝独立日，观赏璀璨烟花。正是在La
+          Jolla那绝美的海岸线旁，我们正式决定携手共进。在Tahoe,
+          我们趁着夜色悄悄溜入高尔夫球场赏月，在桥洞下划船冒险。在旧金山，我们一起为Blackpink的演出欢呼，竭尽所能地用手机捕捉她们的每一个精彩瞬间。在奥兰多迪士尼，我们一起探索了一个充满魔法的奇妙世界，那里我们品尝美味、与迪士尼角色欢乐合影，并勇敢体验了每一个项目。我们还一起去了伯克利欣赏交响乐队表演，去圣何塞共同制作属于我们的水灯。相信我们还会创造更多美好的回忆。每一个瞬间都充满了意义和情感。我相信，未来还有更多精彩等待着我们去探索和创造。
+        </p>
+      </div>
+      <div class="memory-images">
+        <div class="card">
+          <img
+            src="./img/forever.jpg"
+            alt="Forever Love"
+            style="
+              display: block;
+              margin: 0 auto;
+              max-width: 100%;
+              height: auto;
+            "
+          />
+        </div>
+        <div class="card">
+          <img
+            src="./img/sd1.jpg"
+            alt="Beautiful Smile"
+            style="
+              display: block;
+              margin: 0 auto;
+              max-width: 100%;
+              height: auto;
+            "
+          />
+        </div>
+        <div class="card">
+          <img
+            src="./img/disney_5.jpg"
+            alt="US at disney"
+            style="
+              display: block;
+              margin: 0 auto;
+              max-width: 100%;
+              height: auto;
+            "
+          />
+        </div>
+
+        <div class="card">
+          <img
+            src="./img/lattern2.jpg"
+            alt="Our latterns"
+            style="
+              display: block;
+              margin: 0 auto;
+              max-width: 100%;
+              height: auto;
+            "
+          />
+        </div>
+        <div class="card">
+          <img
+            src="./img/blackpink1.JPG"
+            alt="Blackpink1"
+            style="
+              display: block;
+              margin: 0 auto;
+              max-width: 100%;
+              height: auto;
+            "
+          />
+        </div>
+        <div class="card">
+          <img
+            src="./img/blackpink2.JPG"
+            alt="Blackpink2"
+            style="
+              display: block;
+              margin: 0 auto;
+              max-width: 100%;
+              height: auto;
+            "
+          />
+        </div>
+        <div class="card">
+          <img
+            src="./img/disney_1.jpg"
+            alt="Daisy"
+            style="
+              display: block;
+              margin: 0 auto;
+              max-width: 100%;
+              height: auto;
+            "
+          />
+        </div>
+        <div class="card">
+          <img
+            src="./img/disney_2.jpg"
+            alt="us in front of a mirror"
+            style="
+              display: block;
+              margin: 0 auto;
+              max-width: 100%;
+              height: auto;
+            "
+          />
+        </div>
+        <div class="card">
+          <img
+            src="./img/lattern_1.jpg"
+            alt="Our Smile"
+            style="
+              display: block;
+              margin: 0 auto;
+              max-width: 100%;
+              height: auto;
+            "
+          />
+        </div>
+        <div class="card">
+          <img
+            src="./img/disney_3.jpg"
+            alt="US at disney"
+            style="
+              display: block;
+              margin: 0 auto;
+              max-width: 100%;
+              height: auto;
+            "
+          />
+        </div>
+        <div class="card">
+          <img
+            src="./img/disney_4.jpg"
+            alt="Mt everest"
+            style="
+              display: block;
+              margin: 0 auto;
+              max-width: 100%;
+              height: auto;
+            "
+          />
+        </div>
+      </div>
+    </section>
+    <section id="development">
+      <h2>成长与发展</h2>
+      <div class="card">
+        <p>
+          一路走来，我们都在不断促进彼此的成长于发展。我感激你给予的坦诚反馈和指导，它们促进了我的许多进步。这包括在精神生活方面的转变，更好地倾听和响应你的需求，以及对我们未来理想居住地的深思熟虑。认识到要一直保持一个发展的眼光，所以我还计划采取以下步骤来进一步提升我们的生活质量：
+          <li>
+            我会更积极地规划我们的日常娱乐活动。除了日常散步、做饭和看电视外，我们可以每月安排一至两次特别活动，如前往Chase
+            Center现场观看金州勇士队的比赛，与朋友在China
+            Camp公园烧烤，或者在旧金山或伯克利的剧院欣赏艺术表演。
+          </li>
+          <li>
+            我将致力于提升我的社交技巧。这意味着我需要更主动地与朋友们保持联系，抽出时间相聚、共进晚餐或进行Coffee
+            Chat。我还计划参加更多社交活动，如职业活动和派对，并且更积极地参与对话，而不是仅仅做一个被动的听众。
+          </li>
+          <li>
+            关于情绪控制，我承认还有改进的空间。为此，我已经开始去听一些关于心理健康的播客，学习控制消极情绪的策略，初步尝试表明这些方法确实有效。如果你感兴趣，我非常愿意与你分享。
+          </li>
+          <br />
+          当然，我需要努力的方向还远远不止这些。但是在我们相互促进相互支持的环境下，我们一定会不断进步，不断靠近那个理想的自己。
+        </p>
+      </div>
+    </section>
+    <section id="epilogue">
+      <h2>结语</h2>
+      <div class="card">
+        <p>
+          正如我们所讨论的，对于我们的关系，我们不仅有着长远的期望，也明白实现这些期望需要具体、可行的行动计划。从重建信任到共同的目标和价值观，每一步都反映了我们深思熟虑的决定和坚定的承诺。我们共享的信念和目标，以及对生活的相互扶持和情感支持，构成了我们独特关系的基石。通过不断的努力和相互理解，我们正在一起构建一个充满爱、支持、雄心和乐趣的未来。
+        </p>
+      </div>
+    </section>
+  </body>
 </html>
