@@ -106,7 +106,7 @@ const App: React.FC = () => {
                 </span>
               </h1>
               <p className="text-lg text-slate-600 mb-8 max-w-xl mx-auto md:mx-0 leading-relaxed">
-                Backend Framework Engineer at Asana. MS EECS Graduate from UC Berkeley. 
+                Backend Framework Engineer at Asana. EECS Graduate from UC Berkeley. 
                 Specializing in distributed systems, GraphQL, and ML safety.
               </p>
               
@@ -114,7 +114,7 @@ const App: React.FC = () => {
                 <button onClick={() => scrollToSection('contact')} className="px-8 py-3 bg-slate-900 text-white rounded-lg font-medium hover:bg-slate-800 transition-all hover:scale-105 active:scale-95">
                   Get in Touch
                 </button>
-                <a href={CONTACT_INFO.github} className="px-8 py-3 bg-white border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-50 transition-all hover:scale-105 active:scale-95 flex items-center gap-2">
+                <a href={CONTACT_INFO.github} target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-white border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-50 transition-all hover:scale-105 active:scale-95 flex items-center gap-2">
                   <Github size={20} /> GitHub
                 </a>
               </div>
@@ -217,7 +217,7 @@ const App: React.FC = () => {
             <div>
               <h2 className="text-3xl font-bold text-white mb-6">Let's Connect</h2>
               <p className="text-slate-400 mb-8 leading-relaxed max-w-md">
-                I'm currently based in Hayward, CA and open to discussing backend engineering or ML research roles.
+                I'm currently based in {CONTACT_INFO.location} and open to discussing backend engineering or ML research roles.
                 Whether you have a question or just want to say hi, I'll try my best to get back to you!
               </p>
               
@@ -243,10 +243,10 @@ const App: React.FC = () => {
               </div>
 
               <div className="flex gap-4 mt-8">
-                <a href="#" className="p-2 bg-slate-800 rounded-lg hover:bg-white hover:text-slate-900 transition-all">
+                <a href={CONTACT_INFO.linkedin} target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-lg hover:bg-white hover:text-slate-900 transition-all">
                   <Linkedin size={24} />
                 </a>
-                <a href="#" className="p-2 bg-slate-800 rounded-lg hover:bg-white hover:text-slate-900 transition-all">
+                <a href={CONTACT_INFO.github} target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-lg hover:bg-white hover:text-slate-900 transition-all">
                   <Github size={24} />
                 </a>
               </div>

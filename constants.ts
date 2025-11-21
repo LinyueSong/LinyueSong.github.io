@@ -95,7 +95,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 export const CONTACT_INFO = {
   email: "oliversong4@gmail.com",
   phone: "864-382-7139",
-  location: "Hayward, CA",
-  github: "github.com/linyue-song", // Inferred pattern
-  linkedin: "linkedin.com/in/linyue-song" // Inferred pattern
+  location: "Mountain View, CA",
+  github: "https://github.com/LinyueSong",
+  linkedin: "https://www.linkedin.com/feed/"
 };
