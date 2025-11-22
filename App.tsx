@@ -97,7 +97,7 @@ const App: React.FC = () => {
               className="flex-1 text-center md:text-left"
             >
               <div className="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium mb-6">
-                Available for New Opportunities
+                Open for New Opportunities
               </div>
               <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
                 Building Scalable Systems & <br />
