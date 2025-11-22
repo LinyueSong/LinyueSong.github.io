@@ -42,7 +42,8 @@ const App: React.FC = () => {
               </button>
             ))}
             <a 
-              href="#" 
+              href="/resume.pdf" 
+              download="Linyue_Song_Resume.pdf"
               className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors flex items-center gap-2 shadow-lg shadow-indigo-600/20"
             >
               <Download size={16} /> Resume
