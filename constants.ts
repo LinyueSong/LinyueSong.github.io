@@ -92,10 +92,13 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   }
 ];
 
-export const CONTACT_INFO = {
+import { obfuscateContact } from './utils/obfuscate';
+
+// Contact info is obfuscated to prevent web scraping
+export const CONTACT_INFO = obfuscateContact({
   email: "oliversong4@gmail.com",
   phone: "864-382-7139",
   location: "Mountain View, CA",
   github: "https://github.com/LinyueSong",
   linkedin: "https://www.linkedin.com/feed/"
-};
+});

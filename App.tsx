@@ -5,6 +5,7 @@ import { TerminalHero } from './components/TerminalHero';
 import { ExperienceCard } from './components/ExperienceCard';
 import { SkillsSection } from './components/SkillsSection';
 import { EXPERIENCES, EDUCATION, CONTACT_INFO } from './constants';
+import { decode, formatPhone, createMailtoLink } from './utils/obfuscate';
 
 const App: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -222,17 +223,24 @@ const App: React.FC = () => {
               </p>
               
               <div className="space-y-4">
-                <a href={`mailto:${CONTACT_INFO.email}`} className="flex items-center gap-4 hover:text-white transition-colors group">
+                <a 
+                  href={createMailtoLink(CONTACT_INFO.email)} 
+                  className="flex items-center gap-4 hover:text-white transition-colors group"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = createMailtoLink(CONTACT_INFO.email);
+                  }}
+                >
                   <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-indigo-600 transition-colors">
                     <Mail size={18} />
                   </div>
-                  <span>{CONTACT_INFO.email}</span>
+                  <span data-contact="email">{decode(CONTACT_INFO.email)}</span>
                 </a>
                 <div className="flex items-center gap-4 hover:text-white transition-colors group cursor-default">
                   <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-indigo-600 transition-colors">
                     <Phone size={18} />
                   </div>
-                  <span>{CONTACT_INFO.phone}</span>
+                  <span data-contact="phone">{formatPhone(CONTACT_INFO.phone)}</span>
                 </div>
                 <div className="flex items-center gap-4 hover:text-white transition-colors group cursor-default">
                   <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-indigo-600 transition-colors">
